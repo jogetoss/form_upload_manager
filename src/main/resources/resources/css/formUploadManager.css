@@ -1,0 +1,27 @@
+#formUploadManager table {width: 100%;}
+#formUploadManager .clickable {cursor: pointer !important;}
+#formUploadManager th {text-align: center;}
+#formUploadManager th.file-name {width: 65%;}
+#formUploadManager th.file-size {width: 10%;}
+#formUploadManager th.file-used {width: 10%;}
+#formUploadManager th.file-date {width: 20%;}
+#formUploadManager td.file-used, #formUploadManager td.file-date {text-align: center;}
+#formUploadManager td {vertical-align: top; position: relative; padding-top: 8px;}
+#formUploadManager .path {padding: 5px; border: 1px solid #ccc; word-wrap: break-word; margin-bottom: 15px;}
+#formUploadManager .msg {padding: 5px 30px;}
+#formUploadManager td.file-size {text-align: right;}
+#formUploadManager .fmBase .file-label {cursor:default; display: inline-block; font-size:13px; margin: 0; padding: 5px 0 0 25px; box-sizing: border-box; word-wrap: break-word; background-image:url(images/file64.png); background-repeat:no-repeat; background-position:0px 3px; background-size: 20px; min-width: 80%;}
+#formUploadManager .fmFolder .file-label { background-image:url(images/folder64.png) !important; cursor:pointer;}
+#formUploadManager .fmLoading { background-image:url(images/loading2.gif); background-repeat:no-repeat; background-position:center 1em; position:absolute; top:0;left:0;right:0; bottom:0; }
+#formUploadManager .nodelete {width: 15px; height: 15px; display: inline-block; box-sizing: border-box; margin-right: 5px;}
+#formUploadManager .delete {background: red; width: 15px; height: 15px; border-radius: 50%; cursor: pointer; display: inline-block; box-sizing: border-box; line-height: 14px; color: #fff; text-align: center; visibility: hidden; margin-right: 5px;}
+#formUploadManager .fmBase:hover .delete {visibility:visible;}
+#formUploadManager .tick {background: url(../../../images/v3/console/icn_tick.png) 0 0px no-repeat; width: 16px; height: 20px; display: inline-block;}
+@media (max-width: 767px){
+    #formUploadManager .fmBase .file-label {padding-right: 18px; width: 100%;}
+    #formUploadManager th.file-name, #formUploadManager th.file-size, #formUploadManager th.file-used,#formUploadManager th.file-date {width: 100%;}
+    #formUploadManager .delete {visibility:visible; position: absolute; right: 0; top: 15px;}
+    #formUploadManager td {text-align: left !important;}
+    tr[title='..'] td:not(.file-name) {display:none;}
+    #formUploadManager .nodelete {display: none;}
+}

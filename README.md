@@ -1,6 +1,29 @@
-# Description
+# Form Files Manager Plugin
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+The **Form Files Manager Plugin** is a userview menu plugin to manage all your app's form file attachments.
+
+## Features
+
+- View form attachment folders and subfolders.
+- View form attachment file content (e.g. `.txt`, `.pdf`, or image files).
+- Delete form attachments.
+- Delete **unused attachments** (files without linkages to any form records in the current directory).
+
+## Configuration Options
+
+You can configure the Files Manager as follows:
+
+- Add a restriction to limit allowed directories.
+- Restrict access to **admin users only**.
+- Add a **Custom Header** or **Footer**.
+
+---
+
+**CAUTION**  
+- Be advised when using the Userview File Manager Plugin:  
+- Deleted file(s) are **not recoverable**.  
+- All file attachment deletions are **permanent**.
+
 
 # Getting Help
 

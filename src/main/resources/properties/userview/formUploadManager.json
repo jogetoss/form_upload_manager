@@ -1,0 +1,59 @@
+[
+    {
+        "title": "@@userview.formUploadManager.config@@",
+        "properties": [
+            {
+                "name": "id",
+                "label": "Id",
+                "type": "hidden"
+            },
+            {
+                "name": "customId",
+                "label": "@@userview.formmenu.customId@@",
+                "type": "textfield",
+                "regex_validation": "^[a-zA-Z0-9_]+$",
+                "validation_message": "@@userview.formmenu.invalidId@@"
+            },
+            {
+                "name": "label",
+                "label": "@@userview.formmenu.label@@",
+                "type": "textfield",
+                "value": "@@userview.formmenu.form@@",
+                "required": "true"
+            },
+            {
+                "name": "allowedDirs",
+                "label": "@@userview.formUploadManager.allowedDirs@@",
+                "description": "@@userview.formUploadManager.allowedDirs.desc@@",
+                "type": "textarea",
+                "rows": "4"
+            },
+            {
+                "name" : "allowNonAdmin",
+                "label" : "@@userview.formUploadManager.allowNonAdmin@@",
+                "type" : "checkbox",
+                "options" : [{
+                    "value" : "true",
+                    "label" : ""    
+                }]
+            }
+        ]
+    },
+    {
+        "title": "@@userview.formmenu.ui@@",
+        "properties": [
+            {
+                "name": "customHeader",
+                "label": "@@userview.formmenu.customHeader@@",
+                "type": "codeeditor",
+                "mode": "html"
+            },
+            {
+                "name": "customFooter",
+                "label": "@@userview.formmenu.customFooter@@",
+                "type": "codeeditor",
+                "mode": "html"
+            }
+        ]
+    }
+]
